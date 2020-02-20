@@ -1,0 +1,23 @@
+<div data-ng-controller="MovieController">
+    <h1>Movies</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Synopsis</th>
+                <th>Genre</th>
+                <th>Picture</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="m in movies">
+                <td>{{ m.title }}</td>
+                <td>{{ m.synopsis }}</td>
+                <td>{{ m.genre }}</td>
+                <td>{{ m.picture }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="/js/lib/angular/angular.min.js"></script>
+    <script src="/js/lib/angular/angular-route.min.js"></script>
+
+</head>
+<body data-ng-app="MoviesApp">
+    <h1>Welcome</h1>
+    <ul>
+        <li><a href="#!movie">Movies</a></li>
+    </ul>
+    <div data-ng-view></div>
+</body>
+
+<script src="/js/app/app.js"></script>
+<script src="/js/app/movies/movieController.js"></script>
+<script src="/js/app/movies/movieFactory.js"></script>
+</html>

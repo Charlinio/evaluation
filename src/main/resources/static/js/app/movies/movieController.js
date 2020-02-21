@@ -22,8 +22,22 @@ app.controller('MovieController', ['$scope', 'Movie', function($scope, Movie) {
     }
 
     $scope.add = (movie) => {
-        Movie.add().then((response) => {
+        Movie.add(movie).then((response) => {
             $scope.movie = {}
+            all();
+        });
+    }
+
+    $scope.update = (movie) => {
+        Movie.update(movie).then((response) => {
+            $scope.movie = {};
+        });
+    }
+
+    $scope.delete = (movie) => {
+        Movie.delete(movie).then((response) => {
+            $scope.movie = {};
+            all();
         });
     }
 

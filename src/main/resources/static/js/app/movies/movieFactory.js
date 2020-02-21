@@ -4,8 +4,15 @@ app.factory('Movie', ['$http', function($http) {
         findAll: function() {
             return $http.get('/movie/all');
         },
-        add: function() {
-            return $http.post('/movie/add');        }
+        add: function(movie) {
+            return $http.post('/movie/add', movie);
+        },
+        update: function(movie) {
+            return $http.put('/movie/update/' + movie.id, movie);
+        },
+        delete: function(movie) {
+            return $http.delete('/movie/delete/' + movie.id);
+        }
 
     };
 }]);

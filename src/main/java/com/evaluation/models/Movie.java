@@ -20,7 +20,7 @@ public class Movie {
     @Column(name = "genre", columnDefinition = "char(20)")
     private String genre;
 
-    @Column(name = "picture", columnDefinition = "char(10)")
+    @Column(name = "picture", columnDefinition = "char(20)")
     private String picture;
 
     public Movie() {

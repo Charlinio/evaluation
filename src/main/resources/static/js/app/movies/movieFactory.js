@@ -4,6 +4,8 @@ app.factory('Movie', ['$http', function($http) {
         findAll: function() {
             return $http.get('/movie/all');
         },
+        add: function() {
+            return $http.post('/movie/add');        }
 
     };
 }]);

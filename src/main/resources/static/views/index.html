@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+    <link rel="stylesheet" href="/css/lib/bootstrap/bootstrap.min.css">
+
+    <script src="/js/lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/js/lib/bootstrap/bootstrap.min.js"></script>
     <script src="/js/lib/angular/angular.min.js"></script>
     <script src="/js/lib/angular/angular-route.min.js"></script>
 
@@ -11,9 +15,11 @@
 <body data-ng-app="MoviesApp">
     <h1>Welcome</h1>
     <ul>
-        <li><a href="#!movie">Movies</a></li>
+        <li><a href="#!movies">Movies List</a></li>
     </ul>
-    <div data-ng-view></div>
+    <div class="container">
+        <div data-ng-view></div>
+    </div>
 </body>
 
 <script src="/js/app/app.js"></script>
